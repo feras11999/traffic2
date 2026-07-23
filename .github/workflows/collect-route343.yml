@@ -2,6 +2,9 @@ name: Collect Route 343
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/run-route343-now"
   schedule:
     - cron: "0 2,8,14,20 * * *"
 
